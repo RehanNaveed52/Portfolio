@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehan Naveed | Cyber Security Student</title>
+    <meta name="description" content="Portfolio of Rehan Naveed, an aspiring Cyber Security student skilled in ethical hacking, networking, and information security.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Preloader -->
+    <div id="loader">
+        <div class="glitch-text" data-text="INITIALIZING...">INITIALIZING...</div>
+        <div class="loader-bar-container">
+            <div class="loader-bar"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <a href="#home" class="logo">
+                REHAN
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills & Certs</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="nav-btn">Terminal.exe</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+                <div class="hero-text reveal">
+                    <h1 class="glitch-title" data-text="REHAN NAVEED">REHAN NAVEED</h1>
+                    <div class="role-container">
+                        <span class="static-role">I am a</span>
+                        <div class="dynamic-roles">
+                            <span class="role active">Cyber Security Student</span>
+                            <span class="role">Ethical Hacker</span>
+                            <span class="role">C++ Developer</span>
+                        </div>
+                    </div>
+                    <p class="hero-desc">
+                        Aspiring Cyber Security student with strong foundational knowledge in networking, 
+                        ethical hacking, and information security. Motivated to apply technical skills 
+                        in real-world environments.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">View Projects</a>
+                        <a href="#contact" class="btn-secondary">Initiate Contact</a>
+                    </div>
+                </div>
+                <div class="hero-image reveal delay-1">
+                    <div class="image-wrapper">
+                        <div class="cyber-frame"></div>
+                        <div class="scanner-line"></div>
+                        <!-- Added Profile.jpeg image provided by user -->
+                        <img src="Profile.jpeg" alt="Rehan Naveed" class="portrait" id="profile-pic" onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80'">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="floating-badge top-right">Student</div>
+                    <div class="floating-badge bottom-left">CEH Certified</div>
+                </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">// 01. WHOAMI</p>
+                <h2 class="section-title">Background_Info</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>I am actively building hands-on experience through labs, cybersecurity practice environments, and self-study. My goal is to grow professionally within the cybersecurity industry and tackle complex security challenges.</p>
+                    
+                    <div class="education-timeline mt-4">
+                        <h3 class="subsection-title">Education</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>Bachelor of Science in Cyber Security</h4>
+                            <p class="timeline-org">Superior University</p>
+                            <span class="timeline-date">Currently Enrolled</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>Intermediate (Pre-Engineering)</h4>
+                            <p class="timeline-org">Government College Gulberg</p>
+                            <span class="timeline-date">Completed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats reveal delay-1">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Languages</h3>
+                            <ul>
+                                <li><strong>English</strong> - Proficient</li>
+                                <li><strong>Urdu</strong> - Native</li>
+                                <li><strong>Punjabi</strong> - Conversational</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Focus Areas</h3>
+                            <p>Networking, Ethical Hacking, App Security, C++ Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Certs Section -->
+        <section id="skills" class="section alt-bg">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">// 02. CAPABILITIES</p>
+                <h2 class="section-title">Skills & Certifications</h2>
+            </div>
+
+            <div class="skills-container reveal">
+                <div class="skills-column">
+                    <h3 class="subsection-title">Programming & Tech</h3>
+                    <div class="tags-container">
+                        <span class="cyber-tag">C++</span>
+                        <span class="cyber-tag">Python</span>
+                        <span class="cyber-tag">PHP</span>
+                        <span class="cyber-tag">Object-Oriented Programming (OOP)</span>
+                        <span class="cyber-tag">Data Structures & Algorithms (DSA)</span>
+                        <span class="cyber-tag">HTML</span>
+                        <span class="cyber-tag">CSS</span>
+                        <span class="cyber-tag">JavaScript</span>
+                        <span class="cyber-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 class="subsection-title">Certifications</h3>
+                    <ul class="cert-list">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                            <span>CEH (Certified Ethical Hacker)</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                            <span>Introduction to Cyber Security</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                            <span>Introduction to C++</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                            <span>Introduction to Critical Infrastructure Protection</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                            <span>Excel with Copilot: AI-Driven Data Analysis</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                            <span>Cyber Job Simulation from Forage</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                            <span>Python Course - UniAthena</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header reveal">
+                <p class="section-eyebrow">// 03. OPERATIONS</p>
+                <h2 class="section-title">Executed_Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="GitHub Link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Cipher Vault</h3>
+                    <p class="project-desc">Secure encryption/decryption web platform with client-side security mechanisms.</p>
+                    <div class="project-tech">
+                        <span>Web Tech</span>
+                        <span>Cryptography</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal delay-1">
+                    <div class="project-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="GitHub Link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Ceaser Cipher</h3>
+                    <p class="project-desc">C++ based encryption/decryption security project demonstrating fundamental cryptographic concepts.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>Security</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal delay-2">
+                    <div class="project-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="GitHub Link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Wireless Network Jammer</h3>
+                    <p class="project-desc">Hardware-based network jammer built using NRF2.4 module hardware integration to disrupt targeted frequencies.</p>
+                    <div class="project-tech">
+                        <span>Hardware</span>
+                        <span>Networking</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Story Flow Engine</h3>
+                    <p class="project-desc">DSA-based project leveraging Graph, Stack, and Queue data structures for complex narrative branching.</p>
+                    <div class="project-tech">
+                        <span>DSA</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal delay-1">
+                    <div class="project-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Event Ticketing System</h3>
+                    <p class="project-desc">C++ OOP-based system utilizing inheritance, polymorphism, and secure file handling.</p>
+                    <div class="project-tech">
+                        <span>OOP</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+
+               
+                         <!-- Project 6 -->
+                      <div class="project-card reveal delay-3">
+    <div class="project-top">
+        <div class="folder-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+        </div>
+    </div>
+    <h3 class="project-title">SentinelWatch</h3>
+    <p class="project-desc">A CVE threat intelligence dashboard built with React, pulling live vulnerability data from the NVD API. Includes protected routes, form validation, and global state management via Context API.</p>
+    <div class="project-tech">
+        <span>React</span>
+        <span>Tailwind CSS</span>
+        <span>Cybersecurity</span>
+    </div>
+</div>
+
+                <!-- Project 7 -->
+                <div class="project-card reveal">
+                    <div class="project-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Beamly</h3>
+                    <p class="project-desc">Message and file sharing system with end-to-end encryption and decryption mechanisms ensuring maximum data privacy.</p>
+                    <div class="project-tech">
+                        <span>Cryptography</span>
+                        <span>File Sharing</span>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card reveal delay-1">
+                    <div class="project-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Secure Login System</h3>
+                    <p class="project-desc">A PHP-based authentication portal implementing modern security practices like password hashing and secure session management against common exploits.</p>
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>Auth</span>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card reveal delay-2">
+                    <div class="project-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">URL Shortener</h3>
+                    <p class="project-desc">A fast and lightweight URL shortener service built with PHP. Includes link tracking, database management, and secure redirection functionalities.</p>
+                    <div class="project-tech">
+                        <span>PHP</span> 
+                        <span>Web Dev</span>
+                    </div>
+                </div>
+
+
+
+              <!-- Project 10 -->
+                <div class="project-card reveal delay-2">
+                    <div class="project-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Vuln-Probe</h3>
+                    <p class="project-desc">A vulnerability scanning website designed to detect security flaws in web applications. Built using PHP for robust server-side processing.</p>
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>Security Scanning</span>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section alt-bg">
+            <div class="contact-container reveal">
+                <p class="section-eyebrow">// 04. ENDPOINT</p>
+                <h2 class="section-title text-center">Establish Connection</h2>
+                <p class="contact-desc text-center">
+                    I am actively seeking opportunities to apply my skills in cybersecurity, networking, and development. 
+                    Whether you have a question or just want to say hi, my inbox is always open.
+                </p>
+                
+                <div class="contact-actions">
+                    <a href="mailto:rehanchohan299@gmail.com" class="btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        rehanchohan299@gmail.com
+                    </a>
+                    <a href="tel:+923024590040" class="btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        +92 302 4590040
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/rehan-naveed-aa7381348" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com/5122684" target="_blank" class="social-icon" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built with <span style="color: var(--accent);">//</span> by Rehan Naveed</p>
+        <p class="copyright">&copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
